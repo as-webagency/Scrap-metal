@@ -37,4 +37,40 @@ $(document).ready(function () {
 
     heroCalc(100);
 
+    // калькулятор - price 
+    const priceCalc = (price = 100) => {
+
+        const priceBlockCalc = document.querySelector('.price-calc__wrap'),
+            priceBlockSelect = document.querySelector('.price-calc__inner'),
+            priceBlockInput = document.querySelector('.price-calc__input'),
+            totalPriceFrom = document.getElementById('total-price-from');
+
+        const heroCountSum = () => {
+            let totalPrice = 0;
+            const priceSelectValue = priceBlockSelect.options[priceBlockSelect.selectedIndex].value,
+                priceInputValue = +priceBlockInput.value;
+                
+            if (priceSelectValue && priceInputValue) {
+                totalPrice = priceSelectValue * priceInputValue;
+            } else if (priceSelectValue) {
+                totalPrice = 'От';
+            } else {
+                totalPrice = 0;
+            }
+            
+            totalPriceFrom.textContent = totalPrice;
+        };
+
+        priceBlockCalc.addEventListener('change', (event) => {
+            const target = event.target;
+
+            if (target === priceBlockSelect || target === priceBlockInput) {
+                heroCountSum();
+            }
+        });
+
+    };
+
+    priceCalc(100);
+
 });

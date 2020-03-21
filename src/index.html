@@ -110,7 +110,7 @@
                                 <div class="hero-block__description">В этом окне пояснения по типу металла, что отностится к выбранной группе. В этом окне пояснения по типу металла, что отностится к выбранной группе.</div>
                             </div>
                             <div class="hero-block__request">Для более точно рассчёта, оставьте заявку</div>
-                            <button class="hero-block__button">
+                            <button class="button-dark hero-block__button button-dark--color">
                                <span class="hero-block__size">Заявка <span>на точный расчёт</span></span>
                             </button>
                         </div>
@@ -162,9 +162,162 @@
                 </div>
             </div>
         </section>
-        <section class="section price section__relative">
+        <section class="section price price__bg section__relative">
             <div class="container container__relative">
                 <h2 class="title price__title title--color">Прайс лист <span>на приём лома</span></h2>
+                <div class="price-table price-table__size">
+                    <div class="price-table__box">
+                        <div class="price-table__head">Тип металла</div>
+                        <div class="price-table__body">
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">3А</div>
+                                </div>
+                            </div>
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">5А</div>
+                                </div>
+                            </div>
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">12А</div>
+                                </div>
+                            </div>
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">14-16A</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-table__box">
+                        <div class="price-table__head">Вес</div>
+                        <div class="price-table__body">
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">1т</div>
+                                </div>
+                            </div>
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">1т</div>
+                                </div>
+                            </div>
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">1т</div>
+                                </div>
+                            </div>
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">1т</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-table__box">
+                        <div class="price-table__head">Цена</div>
+                        <div class="price-table__body">
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">10000</div>
+                                </div>
+                            </div>
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">10000</div>
+                                </div>
+                            </div>
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">6000</div>
+                                </div>
+                            </div>
+                            <div class="price-table__item">
+                                <div class="price-table__line">
+                                    <div class="price-table__inner">1500</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-table__box">
+                        <div class="price-table__head"></div>
+                        <div class="price-table__body">
+                            <div class="price-table__item">
+                                <button class="button-pink price-table__button button-pink--color">Позвонить</button>
+                            </div>
+                            <div class="price-table__item">
+                                <button class="button-pink price-table__button button-pink--color">Позвонить</button>
+                            </div>
+                            <div class="price-table__item">
+                                <button class="button-pink price-table__button button-pink--color">Позвонить</button>
+                            </div>
+                            <div class="price-table__item">
+                                <button class="button-pink price-table__button button-pink--color">Позвонить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="price-calc price-calc__size">
+                    <div class="price-calc__box">
+                        <h3 class="price-calc__title">Калькулятор</h3>
+                        <span class="price-calc__subtitle">расчёта ориентировочной стоимости</span>
+                        <div class="price-calc__wrap">
+                            <div class="price-calc__decision">
+                                <div class="price-calc__select">
+                                    <select class="price-calc__inner">
+                                        <option value="">Выберите тип металла</option>
+                                        <option value="10">3A</option>
+                                        <option value="10">5A</option>
+                                        <option value="6">12A</option>
+                                        <option value="1.5">14-16A</option>
+                                    </select>
+                                </div>
+                                <div class="price-calc__all">
+                                    <input type="number" class="price-calc__input" min="1" placeholder="Вес">
+                                    <span class="price-calc__equally">=</span>
+                                    <div class="price-calc__from" id="total-price-from">От</div>
+                                </div>
+                            </div>
+                            <button class="button-dark price-calc__button button-dark--color"><span class="price-calc__button-size">Заявка, <span class="price-calc__button-normal">на точный расчёт</span></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__text">Для постоянных клиентов и оптовиков у нас более интересные предложения*</div>
+                <button class="button-pink price__button button-pink--color">Узнать спец.условия</button>
+            </div>
+        </section>
+        <section class="took took__bg">
+            <div class="container">
+                <div class="took-wrap took-wrap__bg">
+                    <h2 class="took-wrap__title">Вывезем металлолом</h2>
+                    <span class="took-wrap__subtitle">с Вашей дачи, гаража, 
+                        участка и другой 
+                        территории</span>
+                    <p class="took-wrap__text">Вывоз, сбор, демонтаж/резка/подрезка по городу Сургут - <span>БЕСПЛАТНО
+                        Наша техника доедет в самые труднодоступные места!</span></p>
+                    <ul class="took-wrap__list">
+                        <li class="took-wrap__item">Приедем на своей технике - ломовоз самосвального типа 
+                            с манипулятором (грейфер)</li>
+                        <li class="took-wrap__item">При необходимости проведём демонтаж конструкций</li>
+                        <li class="took-wrap__item">Погрузим металлолом</li>
+                        <li class="took-wrap__item">Произведём рассчёт любым удобным способом, нал/безнал</li>
+                    </ul>
+                    <div class="took-wrap__btn">
+                        <button class="button-dark took-wrap__button button-dark--color">Назначить время вывоза</button>
+                    </div>
+                </div>
+                <div class="took-image">
+                    <img src="./img/took/auto.png" alt="auto">
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="title reviews__title title--color">Отзывы и благодарственные <span>письма от наших клиентов-партнёров</span></h2>
             </div>
         </section>
     </main>

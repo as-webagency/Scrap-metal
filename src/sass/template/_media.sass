@@ -1,8 +1,39 @@
+@media (max-width: 1400px)
+    .took
+        &-image 
+            img
+                max-width: 700px
+                bottom: -60px
+                right: -10px
+@media (max-width: 1250px)
+    .price
+        &-table
+            &__size
+                margin: 0 0 79px 0
+                overflow-x: scroll
+        &-calc
+            &__size
+                margin-left: 0
+@media (max-width: 1200px)
+    .took
+        &-image 
+            img
+                max-width: 600px
+                right: 0
 @media (max-width: 1160px)
     .services
         &-block
             &__item
                 margin-left: 0
+    .price
+        &-calc
+            &__box
+                max-width: none
+                border: none
+                border-radius: 0
+                &::before
+                    top: -130px
+                    left: -30px
 @media (max-width: 1140px)
     .hero
         &-block
@@ -15,6 +46,40 @@
                 max-width: 320px
             &__line
                 width: 280px
+    .price
+        .container
+            padding: 0
+        &-calc
+            border-radius: 0
+            &__box
+                &::before
+                    display: none
+            &__button
+                &::before
+                    display: none
+            &__decision,
+            &__wrap
+                +flex-column-center
+            &__select
+                width: 280px
+                margin-right: 0
+                margin-bottom: 25px
+            &__inner
+                background-position: 235px 27px
+            &__inner,
+            &__input,
+            &__from
+                height: 52px
+            &__all
+                margin-bottom: 50px
+            &__input,
+            &__from
+                width: 128px
+            &__equally
+                margin: 0 8px
+            &__title,
+            &__subtitle
+                font-size: 27px
 @media (max-width: 1090px)
     .hero
         &-block
@@ -23,6 +88,10 @@
                 margin-top: -30px
             &__list
                 max-width: 375px
+    .took
+        &-image 
+            img
+                max-width: 500px
 @media (max-width: 1024px)
     .services
         &-block
@@ -31,6 +100,28 @@
             &__line
                 width: 260px
 @media (max-width: 992px)
+    .took
+        .container
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-image 
+            img
+                max-width: 400px
+                top: 40px
+                left: 50%
+                transform: translateX(-50%)
+        &-wrap
+            &__bg
+                width: 100%
+                margin-top: -40px
+                &::before
+                    background-position: center
+                    left: 50%
+                    transform: translateX(-50%)
+    .price
+        &__title
+            margin-left: 0
     .header
         &-sides
             &__logotype
@@ -73,7 +164,24 @@
             margin-left: 0
             font-size: 32px
             text-shadow: none
+    .price
+        &__title
+            font-size: 32px
+        &-table
+            &__size
+                margin-left: 80px
 @media (max-width: 700px)
+    .price
+        .container
+            &:first-child
+                padding: 0 0 0 15px
+        &__title
+            font-size: 21px
+            span
+                display: block
+        &-table
+            &__size
+                margin-left: 100px
     .contact-side
         &__viber,
         &__telegram,
@@ -111,6 +219,20 @@
         &__title
             margin: 240px 0 72px     
 @media (max-width: 600px)
+    .took
+        .container
+            padding: 0
+        &__bg
+            background: none
+            min-height: auto
+        &-wrap
+            &__bg
+                margin-top: 0
+                padding: 176px 10px 0
+            &__title
+                font-size: 31px
+            &__subtitle
+                font-size: 31px
     .services
         &__bg
             &::before
@@ -148,6 +270,88 @@
             &__request
                 display: none
 @media (max-width: 480px)
+    .took
+        &__bg
+            margin-top: 0
+        &-wrap
+            &__title
+                max-width: 280px
+                margin: -50px auto 0
+            &__subtitle
+                max-width: 280px
+                margin: 0 auto
+                line-height: 36px
+            &__text
+                margin: 8px auto 14px
+                max-width: 280px
+            &__list
+                max-width: 280px
+                margin: 0 auto
+            &__btn
+                margin-left: 0
+            &__button
+                margin: 23px auto 0
+        &-image
+            img
+                max-width: 280px
+                top: 25px
+    .price
+        padding: 16px 0 52px
+        &__title
+            line-height: 30px
+            letter-spacing: 2px
+            margin-bottom: 45px
+        &-table
+            &__size
+                margin-left: 83px
+                margin-bottom: 98px
+        &-calc
+            &__box
+                margin-bottom: 30px
+            &__size
+                padding: 5px 0
+            &__title
+                font-size: 32px
+                margin: 31px 0 24px
+                &::after
+                    bottom: -4px
+            &__subtitle
+                max-width: 320px
+                line-height: 28px
+                margin: 0 auto 20px
+            &__inner
+                font-size: 18px
+                background-position: 250px 27px
+                letter-spacing: 0.6px
+            &__input,
+            &__from
+                font-size: 18px
+            &__button
+                margin-bottom: 8px
+                width: 255px
+                &-normal
+                    font-weight: normal
+                &-size
+                    position: relative
+                    display: block
+                    width: 169px
+                    text-align: left
+                    margin-left: auto
+                    margin-top: 4px
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: -30px
+                        left: -68px
+                        background: url(../img/hero/calс.png) no-repeat
+                        width: 62px
+                        height: 66px
+        &__text
+            max-width: 240px
+            margin: 32px auto 48px
+            line-height: 20px
+        &__button
+            letter-spacing: 1px
     .header
         padding: 30px 0
         &-sides
@@ -282,7 +486,16 @@
                 font-size: 24px
             &__title
                 margin: -6px 0 -3px
-@media (max-width: 370px)  
+@media (max-width: 425px)  
+    .price
+        &-table
+            &__size
+                margin-left: 30px
+@media (max-width: 370px) 
+    .price
+        &-table
+            &__size
+                margin-left: 0px 
     .logotype
         &__description-text
             margin-left: 18px

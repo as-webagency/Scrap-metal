@@ -1,10 +1,197 @@
 .price
     padding: 90px 0 52px
+    &__bg
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            background: url('../img/price/price-list.png') center no-repeat
+            background-size: cover
+            width: 100%
+            min-height: 1100px
     .container
         &__relative
             z-index: 5
+            max-width: 1245px
     &__title
-        margin-bottom: 45px
+        margin-bottom: 31px
+        margin-left: 12px 
         text-align: center
         span
             font-weight: normal
+    &-table
+        border-radius: 5px
+        border: 1px dashed $table
+        +flex
+        &__size
+            margin: 0 0 79px 13px
+        &__box
+            padding: 29px 22px 16px 10px
+            width: 300px
+            margin-left: 9px
+            &:nth-child(1),
+            &:nth-child(2)
+                border-right: 1px dashed $table
+            &:last-child
+                .price-table
+                    &__item
+                        margin-bottom: 4px
+        &__head
+            color: $light
+            font-weight: bold
+            font-size: 14px
+            text-transform: uppercase
+            letter-spacing: 0.28px
+            margin: 0 0 14px 3px
+        &__line
+            width: 260px
+            height: 60px
+            border-radius: 5px
+            border: 1px solid rgba($table, .5)
+        &__item
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0
+        &__inner
+            width: 240px
+            height: 44px
+            border-radius: 5px
+            background-color: rgba($transGrey, .1)
+            color: $light
+            +flex-content-center
+            margin: 7px auto
+        &__button
+            margin-top: 16px
+            letter-spacing: 2px
+            width: 260px
+            height: 60px
+    &-calc
+        max-width: 1160px
+        width: 100%
+        border-radius: 30px
+        background-image: linear-gradient(to top, $pink 0%, $lightRed 100%)
+        &__size
+            padding: 19px 0
+            margin-left: 20px
+            position: relative
+        &__box
+            max-width: 1120px
+            margin: 0 auto
+            width: 100%
+            border-radius: 17px
+            border: 1px solid rgba($light, .2)
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: -91px
+                left: -85px
+                background: url('../img/price/calc.png') no-repeat
+                width: 308px
+                height: 304px
+        &__title
+            font-size: 32px
+            color: $light
+            text-align: center
+            text-transform: uppercase
+            letter-spacing: 0.64px
+            margin: 30px 0 17px
+            position: relative
+            &::after
+                content: ''
+                width: 32px
+                height: 2px
+                background-color: $light
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                bottom: -12px
+        &__subtitle
+            font-size: 32px
+            color: $light
+            text-align: center
+            display: block
+            letter-spacing: 0.64px
+            line-height: 32px
+            max-width: 480px
+            margin: 0 auto 54px
+        &__wrap
+            max-width: 1080px
+            margin: 0 auto 18px
+            +flex
+            justify-content: space-between
+        &__decision
+            +flex
+        &__select
+            width: 220px
+            margin-right: 59px
+        &__inner
+            width: 100%
+            height: 60px
+            color: $light
+            font-size: 14px
+            box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58)
+            border-radius: 5px
+            appearance: none
+            border-width: 0
+            background: $darkBlue url(../img/arrow_down.png) 195px 27px no-repeat
+            padding-left: 20px
+            margin-top: -2px
+            letter-spacing: 0.4px
+        &__input
+            width: 160px
+            height: 60px
+            box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58)
+            border-radius: 5px
+            background-color: $darkBlue
+            text-align: center
+            border: none
+            color: $light
+            font-size: 14px
+            &::placeholder
+                color: $light
+                opacity: 1
+        &__equally
+            color: $light
+            font-size: 14px
+            +flex-items-center
+            margin: 0 26px
+        &__from
+            background-color: $darkBlue
+            border-radius: 5px
+            +flex-content-center
+            color: $light
+            font-size: 14px
+            width: 160px
+            height: 60px
+            box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58)
+        &__button
+            width: 280px
+            height: 60px
+            position: relative
+            letter-spacing: 1.1px
+            &::before
+                content: ''
+                position: absolute
+                top: 12px
+                left: -107px
+                background: url('../img/price/arrows.png') no-repeat
+                width: 87px
+                height: 34px
+        &__all
+            +flex
+    &__text
+        font-size: 14px
+        color: $light
+        font-weight: bold
+        margin: 50px 0 36px
+        text-align: center
+        position: relative
+    &__button
+        margin: 0 auto
+        display: block
+        width: 260px
+        height: 60px
+        position: relative

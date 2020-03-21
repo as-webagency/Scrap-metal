@@ -484,6 +484,41 @@ button {
   color: #ffffff;
 }
 
+.button-dark {
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.button-dark--color {
+  color: #ffffff;
+  background-color: #252d41;
+  -webkit-box-shadow: 0 26px 40px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 26px 40px rgba(0, 0, 0, 0.24);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#414141), to(#010101));
+  background-image: -webkit-linear-gradient(bottom, #414141 0%, #010101 100%);
+  background-image: -o-linear-gradient(bottom, #414141 0%, #010101 100%);
+  background-image: linear-gradient(to top, #414141 0%, #010101 100%);
+}
+
+.button-pink {
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.button-pink--color {
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#be2252), to(#a91743));
+  background-image: -webkit-linear-gradient(bottom, #be2252 0%, #a91743 100%);
+  background-image: -o-linear-gradient(bottom, #be2252 0%, #a91743 100%);
+  background-image: linear-gradient(to top, #be2252 0%, #a91743 100%);
+}
+
 .header {
   padding: 16px 0;
 }
@@ -919,23 +954,10 @@ button {
 }
 
 .hero-block__button {
-  border: none;
-  border-radius: 30px;
-  background-color: #252d41;
-  -webkit-box-shadow: 0 26px 40px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 26px 40px rgba(0, 0, 0, 0.24);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#414141), to(#010101));
-  background-image: -webkit-linear-gradient(bottom, #414141 0%, #010101 100%);
-  background-image: -o-linear-gradient(bottom, #414141 0%, #010101 100%);
-  background-image: linear-gradient(to top, #414141 0%, #010101 100%);
   width: 254px;
   height: 60px;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.28px;
-  text-transform: uppercase;
   position: relative;
   z-index: 7;
 }
@@ -1084,12 +1106,29 @@ button {
   padding: 90px 0 52px;
 }
 
+.price__bg {
+  position: relative;
+}
+
+.price__bg::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("../img/price/price-list.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 1100px;
+}
+
 .price .container__relative {
   z-index: 5;
+  max-width: 1245px;
 }
 
 .price__title {
-  margin-bottom: 45px;
+  margin-bottom: 31px;
+  margin-left: 12px;
   text-align: center;
 }
 
@@ -1097,9 +1136,443 @@ button {
   font-weight: normal;
 }
 
+.price-table {
+  border-radius: 5px;
+  border: 1px dashed #767373;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price-table__size {
+  margin: 0 0 79px 13px;
+}
+
+.price-table__box {
+  padding: 29px 22px 16px 10px;
+  width: 300px;
+  margin-left: 9px;
+}
+
+.price-table__box:nth-child(1), .price-table__box:nth-child(2) {
+  border-right: 1px dashed #767373;
+}
+
+.price-table__box:last-child .price-table__item {
+  margin-bottom: 4px;
+}
+
+.price-table__head {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+  margin: 0 0 14px 3px;
+}
+
+.price-table__line {
+  width: 260px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid rgba(118, 115, 115, 0.5);
+}
+
+.price-table__item {
+  margin-bottom: 20px;
+}
+
+.price-table__item:last-child {
+  margin-bottom: 0;
+}
+
+.price-table__inner {
+  width: 240px;
+  height: 44px;
+  border-radius: 5px;
+  background-color: rgba(237, 237, 237, 0.1);
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 7px auto;
+}
+
+.price-table__button {
+  margin-top: 16px;
+  letter-spacing: 2px;
+  width: 260px;
+  height: 60px;
+}
+
+.price-calc {
+  max-width: 1160px;
+  width: 100%;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#be2252), to(#a91743));
+  background-image: -webkit-linear-gradient(bottom, #be2252 0%, #a91743 100%);
+  background-image: -o-linear-gradient(bottom, #be2252 0%, #a91743 100%);
+  background-image: linear-gradient(to top, #be2252 0%, #a91743 100%);
+}
+
+.price-calc__size {
+  padding: 19px 0;
+  margin-left: 20px;
+  position: relative;
+}
+
+.price-calc__box {
+  max-width: 1120px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.price-calc__box::before {
+  content: '';
+  position: absolute;
+  top: -91px;
+  left: -85px;
+  background: url("../img/price/calc.png") no-repeat;
+  width: 308px;
+  height: 304px;
+}
+
+.price-calc__title {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+  margin: 30px 0 17px;
+  position: relative;
+}
+
+.price-calc__title::after {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -12px;
+}
+
+.price-calc__subtitle {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  letter-spacing: 0.64px;
+  line-height: 32px;
+  max-width: 480px;
+  margin: 0 auto 54px;
+}
+
+.price-calc__wrap {
+  max-width: 1080px;
+  margin: 0 auto 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-calc__decision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price-calc__select {
+  width: 220px;
+  margin-right: 59px;
+}
+
+.price-calc__inner {
+  width: 100%;
+  height: 60px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58);
+          box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58);
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-width: 0;
+  background: #252d41 url(../img/arrow_down.png) 195px 27px no-repeat;
+  padding-left: 20px;
+  margin-top: -2px;
+  letter-spacing: 0.4px;
+}
+
+.price-calc__input {
+  width: 160px;
+  height: 60px;
+  -webkit-box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58);
+          box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58);
+  border-radius: 5px;
+  background-color: #252d41;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.price-calc__input::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.price-calc__input:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.price-calc__input::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.price-calc__input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.price-calc__equally {
+  color: #ffffff;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 26px;
+}
+
+.price-calc__from {
+  background-color: #252d41;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  width: 160px;
+  height: 60px;
+  -webkit-box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58);
+          box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58);
+}
+
+.price-calc__button {
+  width: 280px;
+  height: 60px;
+  position: relative;
+  letter-spacing: 1.1px;
+}
+
+.price-calc__button::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: -107px;
+  background: url("../img/price/arrows.png") no-repeat;
+  width: 87px;
+  height: 34px;
+}
+
+.price-calc__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price__text {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 50px 0 36px;
+  text-align: center;
+  position: relative;
+}
+
+.price__button {
+  margin: 0 auto;
+  display: block;
+  width: 260px;
+  height: 60px;
+  position: relative;
+}
+
+.took__bg {
+  margin-top: -55px;
+  background: url("../img/took/took-bg.png") center no-repeat;
+  min-height: 919px;
+  width: 100%;
+}
+
+.took-wrap__bg {
+  position: relative;
+  padding: 154px 0 0 15px;
+  max-width: 580px;
+}
+
+.took-wrap__bg::before {
+  content: '';
+  position: absolute;
+  top: 53px;
+  left: -31px;
+  background: url("../img/took/rec.png") no-repeat;
+  max-width: 580px;
+  width: 100%;
+  min-height: 866px;
+  opacity: 0.8;
+}
+
+.took-wrap__title {
+  font-size: 41px;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 0;
+}
+
+.took-wrap__subtitle {
+  line-height: 47px;
+  font-size: 41px;
+  color: #ffffff;
+  max-width: 500px;
+  font-weight: normal;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.took-wrap__text {
+  position: relative;
+  color: #ffffff;
+  letter-spacing: 0.30px;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 14px 0 67px;
+  max-width: 500px;
+}
+
+.took-wrap__text span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.took-wrap__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  max-width: 450px;
+}
+
+.took-wrap__item {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  margin-bottom: 19px;
+  padding-left: 24px;
+}
+
+.took-wrap__item::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: url("../img/took/circle.png") center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.took-wrap__button {
+  width: 260px;
+  height: 60px;
+  margin: 73px auto 0;
+  position: relative;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.took-wrap__btn {
+  margin-left: -60px;
+}
+
+.took-image {
+  position: relative;
+}
+
+.took-image img {
+  position: absolute;
+  bottom: -74px;
+  right: -108px;
+}
+
+@media (max-width: 1400px) {
+  .took-image img {
+    max-width: 700px;
+    bottom: -60px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .price-table__size {
+    margin: 0 0 79px 0;
+    overflow-x: scroll;
+  }
+  .price-calc__size {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .took-image img {
+    max-width: 600px;
+    right: 0;
+  }
+}
+
 @media (max-width: 1160px) {
   .services-block__item {
     margin-left: 0;
+  }
+  .price-calc__box {
+    max-width: none;
+    border: none;
+    border-radius: 0;
+  }
+  .price-calc__box::before {
+    top: -130px;
+    left: -30px;
   }
 }
 
@@ -1114,6 +1587,50 @@ button {
   .services-block__line {
     width: 280px;
   }
+  .price .container {
+    padding: 0;
+  }
+  .price-calc {
+    border-radius: 0;
+  }
+  .price-calc__box::before {
+    display: none;
+  }
+  .price-calc__button::before {
+    display: none;
+  }
+  .price-calc__decision, .price-calc__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .price-calc__select {
+    width: 280px;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .price-calc__inner {
+    background-position: 235px 27px;
+  }
+  .price-calc__inner, .price-calc__input, .price-calc__from {
+    height: 52px;
+  }
+  .price-calc__all {
+    margin-bottom: 50px;
+  }
+  .price-calc__input, .price-calc__from {
+    width: 128px;
+  }
+  .price-calc__equally {
+    margin: 0 8px;
+  }
+  .price-calc__title, .price-calc__subtitle {
+    font-size: 27px;
+  }
 }
 
 @media (max-width: 1090px) {
@@ -1123,6 +1640,9 @@ button {
   }
   .hero-block__list {
     max-width: 375px;
+  }
+  .took-image img {
+    max-width: 500px;
   }
 }
 
@@ -1136,6 +1656,40 @@ button {
 }
 
 @media (max-width: 992px) {
+  .took .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .took-image img {
+    max-width: 400px;
+    top: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .took-wrap__bg {
+    width: 100%;
+    margin-top: -40px;
+  }
+  .took-wrap__bg::before {
+    background-position: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .price__title {
+    margin-left: 0;
+  }
   .header-sides__logotype {
     margin-left: 0;
   }
@@ -1196,9 +1750,27 @@ button {
     font-size: 32px;
     text-shadow: none;
   }
+  .price__title {
+    font-size: 32px;
+  }
+  .price-table__size {
+    margin-left: 80px;
+  }
 }
 
 @media (max-width: 700px) {
+  .price .container:first-child {
+    padding: 0 0 0 15px;
+  }
+  .price__title {
+    font-size: 21px;
+  }
+  .price__title span {
+    display: block;
+  }
+  .price-table__size {
+    margin-left: 100px;
+  }
   .contact-side__viber, .contact-side__telegram, .contact-side__whatsapp {
     display: none;
   }
@@ -1245,6 +1817,23 @@ button {
 }
 
 @media (max-width: 600px) {
+  .took .container {
+    padding: 0;
+  }
+  .took__bg {
+    background: none;
+    min-height: auto;
+  }
+  .took-wrap__bg {
+    margin-top: 0;
+    padding: 176px 10px 0;
+  }
+  .took-wrap__title {
+    font-size: 31px;
+  }
+  .took-wrap__subtitle {
+    font-size: 31px;
+  }
   .services__bg::before {
     top: -590px;
   }
@@ -1298,6 +1887,106 @@ button {
 }
 
 @media (max-width: 480px) {
+  .took__bg {
+    margin-top: 0;
+  }
+  .took-wrap__title {
+    max-width: 280px;
+    margin: -50px auto 0;
+  }
+  .took-wrap__subtitle {
+    max-width: 280px;
+    margin: 0 auto;
+    line-height: 36px;
+  }
+  .took-wrap__text {
+    margin: 8px auto 14px;
+    max-width: 280px;
+  }
+  .took-wrap__list {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .took-wrap__btn {
+    margin-left: 0;
+  }
+  .took-wrap__button {
+    margin: 23px auto 0;
+  }
+  .took-image img {
+    max-width: 280px;
+    top: 25px;
+  }
+  .price {
+    padding: 16px 0 52px;
+  }
+  .price__title {
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+  }
+  .price-table__size {
+    margin-left: 83px;
+    margin-bottom: 98px;
+  }
+  .price-calc__box {
+    margin-bottom: 30px;
+  }
+  .price-calc__size {
+    padding: 5px 0;
+  }
+  .price-calc__title {
+    font-size: 32px;
+    margin: 31px 0 24px;
+  }
+  .price-calc__title::after {
+    bottom: -4px;
+  }
+  .price-calc__subtitle {
+    max-width: 320px;
+    line-height: 28px;
+    margin: 0 auto 20px;
+  }
+  .price-calc__inner {
+    font-size: 18px;
+    background-position: 250px 27px;
+    letter-spacing: 0.6px;
+  }
+  .price-calc__input, .price-calc__from {
+    font-size: 18px;
+  }
+  .price-calc__button {
+    margin-bottom: 8px;
+    width: 255px;
+  }
+  .price-calc__button-normal {
+    font-weight: normal;
+  }
+  .price-calc__button-size {
+    position: relative;
+    display: block;
+    width: 169px;
+    text-align: left;
+    margin-left: auto;
+    margin-top: 4px;
+  }
+  .price-calc__button-size::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -68px;
+    background: url(../img/hero/calс.png) no-repeat;
+    width: 62px;
+    height: 66px;
+  }
+  .price__text {
+    max-width: 240px;
+    margin: 32px auto 48px;
+    line-height: 20px;
+  }
+  .price__button {
+    letter-spacing: 1px;
+  }
   .header {
     padding: 30px 0;
   }
@@ -1462,7 +2151,16 @@ button {
   }
 }
 
+@media (max-width: 425px) {
+  .price-table__size {
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 370px) {
+  .price-table__size {
+    margin-left: 0px;
+  }
   .logotype__description-text {
     margin-left: 18px;
   }
