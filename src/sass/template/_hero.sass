@@ -1,0 +1,218 @@
+.hero
+    background: url('../img/hero/hero.jpg') center no-repeat
+    height: 100vh
+    min-height: 900px
+    background-size: cover
+    padding: 87px 0 130px
+    &__bg
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: rgba($darkBlue, .3)
+    &__title
+        text-shadow: -5px 5px 0px rgba($dark, .4)
+        margin-left: 13px
+    p
+        font-size: 50px
+        font-weight: 400
+        margin: -2px 0 0 15px
+        color: $light
+        letter-spacing: 1px
+        text-shadow: -5px 5px 0px rgba($dark, .4) 
+    &__commercial 
+        margin: 31px 0 55px 9px
+        +flex-items-center
+        &-from
+            width: 369px
+            height: 40px
+            border-radius: 5px
+            border: 2px solid $lightRed
+            font-size: 32px
+            color: $pink
+            +flex-content-center
+            letter-spacing: 0.64px
+            margin-right: 25px
+            &-bold
+                font-weight: 900
+                margin: 0 7px
+            &-upper
+                text-transform: uppercase
+        &-behind
+            font-size: 32px
+            color: $light 
+            letter-spacing: 0.7px
+    &-block
+        +flex-wrap
+        justify-content: space-between
+        &__list
+            padding: 0
+            margin: -5px 0 0 17px
+            list-style: none
+        &__item
+            +flex-items-center
+            margin-bottom: 21px
+            &:last-child
+                margin-bottom: 0
+                .hero
+                    &-block
+                        &__heading
+                            margin: 4px 0 3px 0
+                        &__text
+                            max-width: 350px
+        &__image
+            margin-right: 20px
+        &__block
+            color: $light
+        &__heading
+            text-transform: uppercase
+            font-size: 14px
+            font-weight: bold
+            margin: 7px 0 5px 0
+            letter-spacing: 0.30px
+        &__text
+            text-shadow: none !important
+            color: $light
+            font-size: 14px !important
+            margin-left: 0 !important
+            letter-spacing: 0.40px !important
+            line-height: 27px
+        &__circle
+            margin-top: -92px
+            margin-right: -2px
+            width: 582px
+            height: 582px
+            border-radius: 50%
+            +flex-content-center
+            background-color: $darkBlue
+            background-image: linear-gradient(to top, $pink 0%, $lightRed 100%)            
+            &-inner
+                width: 548px
+                height: 548px
+                border: 1px dashed rgba($light, .2)
+                border-radius: 50%
+                text-align: center
+                color: $light
+        &__title
+            margin: 72px 0 25px
+            font-weight: 900
+            letter-spacing: 0.64px
+            line-height: 24px
+            font-size: 32px
+            text-transform: uppercase
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                width: 34px
+                height: 2px
+                background-color: $light
+                left: 50%
+                transform: translateX(-50%)
+                bottom: -19px
+        &__subtitle                
+            letter-spacing: 0.64px
+            font-size: 32px
+            display: block
+            line-height: 30px
+        &__calc
+            max-width: 220px
+            margin-left: -4px
+            &-wrap
+                margin: 29px auto
+                padding: 19px 0 14px
+                border-top: 1px dashed rgba($light, .5)
+                border-bottom: 1px dashed rgba($light, .5)
+                max-width: 496px
+                letter-spacing: 0.28px
+                +flex
+                justify-content: space-between
+        &__select
+            color: $light
+            width: 100%
+            height: 40px
+            font-size: 14px
+            letter-spacing: 0.28px
+            border-width: 0
+            padding-left: 19px
+            appearance: none
+            border-radius: 5px
+            background: $darkBlue url('../img/arrow_down.png') 193px 20px no-repeat
+            box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58)
+            &-wrap
+                width: 220px
+        &__field
+            position: relative
+            margin-top: 20px
+            +flex-items-center
+            justify-content: space-between
+        &__input
+            background-color: $darkBlue
+            border: none
+            text-align: center
+            color: $light
+            font-size: 14px
+            border-radius: 5px
+            width: 95px
+            height: 40px
+            box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58)
+            &::placeholder
+                color: $light
+                opacity: 1
+        &__from 
+            background-color: $darkBlue     
+            +flex-content-center
+            color: $light
+            font-size: 14px
+            border-radius: 5px
+            width: 95px
+            height: 40px
+            box-shadow: inset 0 0 7px rgba(212, 74, 116, 0.58)  
+        &__description
+            color: $light
+            font-size: 14px
+            line-height: 22px
+            letter-spacing: 0.38px
+            max-width: 350px
+            text-align: left
+            margin: -4px 0 0 18px
+        &__request
+            font-size: 14px
+            letter-spacing: 0.28px
+            margin: 0 auto 33px   
+        &__button
+            border: none
+            border-radius: 30px
+            background-color: $darkBlue
+            box-shadow: 0 26px 40px rgba($dark, 0.24)
+            background-image: linear-gradient(to top, #414141 0%, #010101 100%)
+            width: 254px
+            height: 60px
+            color: $light
+            font-weight: 700
+            font-size: 14px
+            line-height: 18px
+            letter-spacing: 0.28px
+            text-transform: uppercase
+            position: relative
+            z-index: 7
+            &::before
+                content: ''
+                position: absolute
+                top: -16px
+                left: 15px
+                background: url('../img/hero/calс.png') no-repeat
+                width: 62px
+                height: 66px
+        &__size
+            display: block
+            width: 140px
+            text-align: left
+            margin-left: auto
+            margin-right: 20px
+            span
+                font-weight: 400

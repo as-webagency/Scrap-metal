@@ -1,0 +1,290 @@
+@media (max-width: 1160px)
+    .services
+        &-block
+            &__item
+                margin-left: 0
+@media (max-width: 1140px)
+    .hero
+        &-block
+            &__list
+                margin: 0
+                max-width: 380px
+    .services
+        &-block
+            &__image
+                max-width: 320px
+            &__line
+                width: 280px
+@media (max-width: 1090px)
+    .hero
+        &-block
+            &__circle
+                margin-right: 0
+                margin-top: -30px
+            &__list
+                max-width: 375px
+@media (max-width: 1024px)
+    .services
+        &-block
+            &__image
+                max-width: 300px
+            &__line
+                width: 260px
+@media (max-width: 992px)
+    .header
+        &-sides
+            &__logotype
+                margin-left: 0
+    .logotype
+        &__description-text
+            font-size: 14px
+            max-width: 250px
+            line-height: 20px
+            &::before
+                top: -3px
+    .hero
+        min-height: 1270px
+        &-block
+            flex-direction: column-reverse
+            align-items: center
+            &__list
+                margin-top: 35px
+        .container
+            &__relative
+                z-index: 8
+    .services
+        &__bg
+            &::before
+                top: -670px 
+        &__title
+            margin: 190px 0 72px  
+        &-block
+            &s
+                +flex-column-center
+            &__item
+                margin-bottom: 50px                     
+@media (max-width: 768px)
+    .hero
+        &__title
+            margin-left: 0
+            font-size: 32px
+            text-shadow: none
+        p
+            margin-left: 0
+            font-size: 32px
+            text-shadow: none
+@media (max-width: 700px)
+    .contact-side
+        &__viber,
+        &__telegram,
+        &__whatsapp
+            display: none 
+        &__phone,
+        &__button
+            color: $light
+    .container
+        &__header-sides                         
+            position: relative
+    .header-sides
+        &__contact-side
+            position: absolute
+            bottom: -110px
+            left: 50%
+            transform: translateX(-50%) 
+            z-index: 5
+            width: 100%
+            max-width: 240px
+        &__logotype
+            margin: 0 auto
+    .hero 
+        .container
+            &__relative
+                margin-top: 50px
+        &__commercial
+            +flex-column
+            align-items: flex-start
+            margin: 31px 0 55px 0
+            &-from
+                margin-right: 0
+                margin-bottom: 15px   
+    .services
+        &__title
+            margin: 240px 0 72px     
+@media (max-width: 600px)
+    .services
+        &__bg
+            &::before
+                top: -590px
+        &__title
+            margin: 70px 0 50px
+    .hero
+        overflow: hidden
+        &-block
+            &__list
+                position: absolute
+                top: 820px
+            &__circle
+                margin-top: 35px
+                min-width: 700px
+                width: 100%
+                position: absolute
+                top: 200px
+                left: 50%
+                transform: translateX(-50%)
+                &-inner
+                    max-width: 670px
+                    width: 100%
+            &__calc        
+                &-wrap
+                    border: none
+                    +flex-column-center
+                    margin: 0 auto 25px
+            &__description
+                font-size: 12px
+                margin: 10px 0 0
+            &__subtitle
+                max-width: 400px
+                margin: 0 auto
+            &__request
+                display: none
+@media (max-width: 480px)
+    .header
+        padding: 30px 0
+        &-sides
+            &__logotype
+                max-width: 300px
+            &__contact-side
+                bottom: -117px
+                left: 55%
+    .logotype
+        &__description-text
+            line-height: normal
+            margin-left: 25px
+            max-width: 250px
+    .custom-logo-link
+        margin-top: -5px
+        width: 78px
+    .logotype
+        &__description-text
+            font-size: 12px 
+            &::before
+                top: -16px
+                left: -21px  
+    .hero
+        &-block
+            &__text
+                line-height: normal !important  
+                font-size: 11px !important              
+    .hero
+        min-height: 1550px
+        &__title
+            font-size: 41px
+            max-width: 280px
+            margin: -7px auto 0
+        p
+            max-width: 280px
+            margin: 0 auto
+            letter-spacing: 3.5px
+            line-height: 46px
+        &__commercial
+            margin: 15px auto 0
+            max-width: 280px
+            width: 100%
+            &-from
+                height: 31px
+                font-size: 24px
+                width: auto
+                padding: 3px
+            &-behind
+                font-size: 24px
+                margin: -5px 0 0 6px
+        &-block
+            &__circle
+                margin-top: 0
+                top: 330px
+                min-width: 590px
+                &-inner
+                    max-width: 560px
+            &__title
+                margin: 42px 0 28px
+                &::after
+                    bottom: -13px
+                    width: 32px
+            &__calc
+                max-width: 280px
+            &__select
+                height: 50px
+                padding-left: 24px
+                font-size: 18px
+                letter-spacing: .5px
+                background-position: 250px 26px
+                &-wrap
+                    width: 280px
+            &__field
+                margin-top: 30px
+            &__input,
+            &__from
+                width: 126px
+                height: 47px
+                font-size: 18px
+            &__description
+                max-width: 280px
+                line-height: 16px
+                letter-spacing: 0.30px
+            &__size
+                margin-top: -4px
+                margin-right: 21px
+            &__list
+                margin-top: 128px
+                max-width: 280px
+            &__heading
+                font-size: 11px
+                margin: 4px 0 2px
+                letter-spacing: normal   
+            &__item
+                margin-bottom: 16px
+                &:nth-child(2)
+                    margin: 23px 0 18px
+                    .hero-block
+                        &__block
+                            margin-top: -10px     
+                        &__heading
+                            margin: 10px 0 6px
+                &:nth-child(5)
+                    margin-top: 23px
+                    .hero-block
+                        &__block
+                            margin-top: -9px
+    .services
+        &__title
+            font-size: 21px
+            margin: 29px 0 36px
+            letter-spacing: 0.2px
+        &-block
+            &__image
+                max-width: 280px
+                height: 310px
+            &__line
+                width: 250px
+                height: 280px
+            &__circle
+                width: 132px
+                height: 132px
+                margin: 21px auto 41px
+            &__number
+                width: 95px
+                height: 95px
+                margin: 18px auto
+                padding: 25px
+                font-size: 37px
+            &__title,
+            &__text
+                font-size: 24px
+            &__title
+                margin: -6px 0 -3px
+@media (max-width: 370px)  
+    .logotype
+        &__description-text
+            margin-left: 18px
+            &::before
+                left: -15px              
