@@ -5,6 +5,14 @@
                 max-width: 700px
                 bottom: -60px
                 right: -10px
+@media (max-width: 1280px)
+    .buyout
+        &-block
+            &__inner
+                &:last-child 
+                    .buyout-block
+                        &__image
+                            max-width: 700px
 @media (max-width: 1250px)
     .price
         &-table
@@ -20,6 +28,15 @@
             img
                 max-width: 600px
                 right: 0
+    .reviews
+        &__title
+            font-size: 32px
+        &-block
+            &__left
+                max-width: 500px
+            &__box
+                max-width: 900px
+                margin: 0 auto
 @media (max-width: 1160px)
     .services
         &-block
@@ -35,6 +52,14 @@
                     top: -130px
                     left: -30px
 @media (max-width: 1140px)
+    .buyout
+        &-block
+            &__inner
+                &:last-child 
+                    .buyout-block
+                        &__image
+                            max-width: 550px
+                            top: 70px
     .hero
         &-block
             &__list
@@ -92,6 +117,11 @@
         &-image 
             img
                 max-width: 500px
+    .reviews
+        &-arrow
+            &__prev,
+            &__next
+                display: none !important
 @media (max-width: 1024px)
     .services
         &-block
@@ -100,6 +130,29 @@
             &__line
                 width: 260px
 @media (max-width: 992px)
+    .buyout
+        padding-top: 145px
+        &__title
+            font-size: 21px
+            margin: 0 0 16px 0
+            line-height: 30px
+        &-block
+            &s
+                +flex-column-center
+            &__box
+                margin: 0 auto
+            &__inner
+                &:last-child 
+                    .buyout-block__image
+                        top: 0
+                        left: 50%
+                        transform: translate(-50%)
+                        max-width: 300px  
+    .reviews
+        padding: 80px 0 65px
+        &-block
+            &__box
+                align-items: center
     .took
         .container
             display: flex
@@ -155,6 +208,24 @@
             &__item
                 margin-bottom: 50px                     
 @media (max-width: 768px)
+    .reviews
+        padding: 80px 0 0
+    .slick-slide
+        height: 700px
+    .reviews
+        &-block
+            &__box
+                max-width: 450px
+                flex-direction: column
+            &__right
+                position: absolute
+                bottom: 40px
+                z-index: 10
+            &__text
+                height: 260px
+                overflow: hidden
+    .slick-dots
+        display: none !important
     .hero
         &__title
             margin-left: 0
@@ -219,6 +290,8 @@
         &__title
             margin: 240px 0 72px     
 @media (max-width: 600px)
+    .reviews
+        padding: 300px 0 65px
     .took
         .container
             padding: 0
@@ -270,6 +343,73 @@
             &__request
                 display: none
 @media (max-width: 480px)
+    .buyout
+        padding-top: 14px
+        &__bg
+            &::before
+                top: -155px
+                background-size: cover
+                min-height: 1260px
+        &__title
+            letter-spacing: 0.1px
+            line-height: 32px
+            margin: 0 0 13px 0
+            span
+                margin-left: 5px
+                letter-spacing: 0.5px
+        &__text
+            max-width: 270px
+            margin: 0 auto 23px
+            letter-spacing: 0.2px
+        &-block
+            &__list
+                max-width: 300px
+                margin: 0 0 36px
+            &__item
+                font-size: 12px
+                padding-left: 50px
+                &::before
+                    top: 5px
+                    left: 12px
+            &__title
+                letter-spacing: 0.5px
+            &__button
+                letter-spacing: 1px
+            &__inner
+                &:last-child 
+                    .buyout-block
+                        &__image
+                            top: 60px
+                            max-width: 360px
+    .reviews
+        padding: 190px 0 0
+        &__title
+            font-size: 21px
+            margin: 35px auto 42px
+            max-width: 280px
+            line-height: 34px
+        &-block
+            &__box
+                max-width: 280px
+                height: 560px
+                overflow: hidden
+                padding: 30px 23px 50px 15px
+            &__left
+                margin-right: 0
+            &__name
+                font-size: 15px
+                margin: 0 0 25px
+                &::before
+                    width: 17px
+                    bottom: -15px
+            &__text
+                font-size: 12px
+                line-height: 21px
+                height: 272px
+            &__right
+                max-width: 217px
+                height: 298px
+                bottom: 107px
     .took
         &__bg
             margin-top: 0
