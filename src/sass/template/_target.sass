@@ -1,0 +1,200 @@
+.target
+    padding: 160px 0 50px
+    &__bg
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            background: url('../img/target/target-bg.png') center no-repeat
+            width: 100%
+            min-height: 1268px
+    &__title
+        margin: 0 auto 109px
+        text-align: center
+        max-width: 1030px
+        line-height: 54px
+        span
+            font-weight: normal
+            display: block
+            margin-left: 12px
+        &-wrap
+            margin-left: 25px
+    &__warning
+        letter-spacing: 0.2px
+        text-transform: uppercase
+        color: $red
+        font-size: 20px
+        font-weight: bold
+        line-height: 26px
+        text-align: center
+        margin: -30px auto 55px
+        max-width: 1000px
+    &-box
+        padding: 19px 20px
+        border-radius: 30px
+        background-image: linear-gradient(to top, $pink 0%, $lightRed 100%)
+        &__img
+            display: none
+        &__out
+            max-width: 1160px
+            width: 100%
+            margin-left: 19px
+        &__inner
+            max-width: 1120px
+            width: 100%
+            border-radius: 17px
+            border: 1px solid rgba($light, .2)
+            margin: 0 auto
+            position: relative
+            &::after
+                content: ''
+                background: url('../img/target/light.png') no-repeat
+                position: absolute
+                top: -58px
+                right: -210px
+                max-width: 524px
+                width: 100%
+                min-height: 480px
+        &__title
+            font-weight: bold
+            font-size: 32px
+            line-height: 31px
+            text-transform: uppercase
+            letter-spacing: 0.64px
+            margin: 32px 0 75px 33px
+            color: $light
+            max-width: 820px
+            span
+                display: block
+                font-weight: normal
+                text-transform: lowercase
+        &__form
+            +flex-wrap 
+            margin-left: 36px
+            position: relative
+            z-index: 5
+        &__group
+            position: relative
+            max-width: 260px
+            margin-bottom: 20px
+            &:nth-child(2)
+                max-width: 201px
+                .target-box
+                    &__input
+                        width: 193px
+                &::before
+                    content: ''
+                    background: url('../img/email.png') no-repeat
+                    width: 20px
+                    height: 19px
+                    position: absolute
+                    top: 20px
+                    left: 20px
+            &:first-child
+                margin-right: 20px
+                &::before
+                    content: ''
+                    background: url('../img/phons.png') no-repeat
+                    width: 20px
+                    height: 20px
+                    position: absolute
+                    top: 18px
+                    left: 18px
+        &__input
+            width: 252px
+            height: 52px
+            padding: 0 10px 0 53px
+            margin-top: -2px
+        &__button
+            margin-left: 21px  
+            height: 60px
+            width: 280px
+            letter-spacing: 1px
+    &-policy
+        color: $light
+        font-weight: bold
+        font-size: 14px
+        letter-spacing: 0.28px
+        text-align: center
+        margin: 27px 0 0 238px
+.card
+    &s
+        +flex-wrap
+        justify-content: space-between 
+        &__target
+            max-width: 1200px
+    &__target
+        max-width: 540px
+        box-shadow: 0 63px 70px 14px rgba($dark, 0.07);
+        border-radius: 30px
+        background-color: $red   
+        margin: -5px 0 90px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: -78px
+            left: 50%
+            transform: translateX(-50%)
+            background: url('../img/target/curcle.png') no-repeat
+            width: 155px
+            height: 155px
+        &:nth-child(odd)
+            margin-left: 18px
+    &__bottom
+        position: relative
+    &__image
+        margin-bottom: -4px
+        border-radius: 0 0 30px 30px  
+        height: 319px
+    &__top
+        padding: 35px 20px 18px 40px
+        height: 139px
+        overflow: hidden
+    &__title
+        letter-spacing: 0.28px
+        text-transform: uppercase 
+        font-size: 14px
+        color: $light
+        margin: 0
+        position: relative
+        line-height: 19px
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: -10px
+            width: 15px
+            height: 2px
+            background-color: $light
+    &__text
+        font-size: 14px
+        color: $light
+        line-height: 22px
+        margin: 23px 0 0
+    &__hover
+        max-width: 500px
+        width: 100%
+        height: 79px
+        position: absolute
+        right: 0
+        bottom: 0
+        transition: .5s
+        border-radius: 0 0 30px 0
+        color: $light
+        letter-spacing: 0.28px
+        font-size: 14px
+        padding: 17px 80px 0 0
+        line-height: 22px
+        text-align: right
+        background: url('../img/target/rec.png') no-repeat
+        &::before
+            content: ''
+            position: absolute
+            right: 23px
+            bottom: 18px
+            background: url('../img/target/attention.png') no-repeat
+            width: 46px
+            height: 46px

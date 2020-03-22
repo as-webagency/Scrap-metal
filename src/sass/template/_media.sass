@@ -1,3 +1,21 @@
+@media (max-width: 1550px)
+    .target
+        &-box
+            &__inner
+                &::after
+                    right: -170px
+@media (max-width: 1480px)
+    .target
+        &-box
+            &__out
+                margin-left: 0
+            &__title
+                font-size: 28px
+            &__inner
+                &::after
+                    right: -70px
+        &-policy
+            margin: 27px 0 0 -100px
 @media (max-width: 1400px)
     .took
         &-image 
@@ -6,6 +24,35 @@
                 bottom: -60px
                 right: -10px
 @media (max-width: 1280px)
+    .target
+        &__title
+            font-size: 32px
+            line-height: 40px
+            max-width: 900px
+        &-box
+            &__title
+                font-size: 24px
+                max-width: 630px
+            &__inner
+                &::after
+                    top: -65px
+                    right: -35px
+            &__out
+                max-width: 1100px
+    .card
+        &__target
+            max-width: 480px
+            &:nth-child(odd)
+                margin-left: 0
+        &__hover
+            padding: 17px 25px 0 0
+            background-position: 20px
+            &::before
+                display: none
+    .cards
+        &__target
+            max-width: 1000px
+            margin: 0 auto
     .buyout
         &-block
             &__inner
@@ -52,6 +99,31 @@
                     top: -130px
                     left: -30px
 @media (max-width: 1140px)
+    .work
+        padding: 90px 0 0
+    .target
+        &-box
+            &__form
+                +flex-column
+            &__group
+                max-width: 281px
+                &:first-child
+                    margin-right: 0
+                &:nth-child(2)
+                    max-width: 281px
+                    & .target-box__input
+                        width: 272px
+            &__input
+                width: 272px
+            &__button
+                margin-left: 0
+            &__inner
+                &::after
+                    top: 160px
+                    right: 0
+        &-policy
+            text-align: left
+            margin: 27px 0 0 80px
     .buyout
         &-block
             &__inner
@@ -130,6 +202,22 @@
             &__line
                 width: 260px
 @media (max-width: 992px)
+    .target
+        padding: 290px 0 50px
+        &__title
+            font-size: 21px
+            line-height: 32px
+            max-width: 360px
+            &-wrap
+                margin-left: 0
+        &__warning
+            display: none
+    .card
+        &__target
+            margin: 0 0 110px
+        &s
+            &__target
+                +flex-column-center
     .buyout
         padding-top: 145px
         &__title
@@ -207,7 +295,43 @@
                 +flex-column-center
             &__item
                 margin-bottom: 50px                     
+@media (max-width: 880px)
+    .work 
+        padding: 300px 0 0
+    .target
+        &-box
+            border-radius: 0
+            &__inner
+                border: none
+                max-width: none
+                border-radius: 0
+                padding-bottom: 250px
+                &::after
+                    top: 450px
+                    left: 50%
+                    transform: translateX(-50%)
+            &__title
+                margin: 0 auto 25px
+                text-align: center
+            &__form
+                margin: 0 auto
+                max-width: 290px
+        &-policy
+            margin: 27px 0 0 0
+            position: absolute
+            bottom: 290px
+            left: 50%
+            transform: translateX(-50%)
 @media (max-width: 768px)
+    .work
+        &__title
+            margin-bottom: 40px
+        &-block
+            &__image
+                display: flex
+                justify-content: center
+                width: 50%
+                margin-bottom: 60px
     .reviews
         padding: 80px 0 0
     .slick-slide
@@ -290,6 +414,41 @@
         &__title
             margin: 240px 0 72px     
 @media (max-width: 600px)
+    .work
+        padding: 360px 0 0
+        &__title
+            font-size: 21px
+    .target
+        &__title
+            font-size: 19px
+            max-width: 300px
+        &-box
+            &__inner
+                padding-bottom: 170px
+                &::after
+                    display: none
+            &__img
+                display: block
+                position: absolute
+                bottom: -380px
+                left: 50%
+                transform: translateX(-50%)
+            &__out
+                position: relative
+        &-policy
+            bottom: 200px
+    .card
+        &__target
+            max-width: 320px
+        &__image
+            height: auto
+        &__title
+            font-size: 12px
+        &__text
+            font-size: 12px
+            line-height: 18px
+        &__hover
+            display: none
     .reviews
         padding: 300px 0 65px
     .took
@@ -343,6 +502,60 @@
             &__request
                 display: none
 @media (max-width: 480px)
+    .work
+        padding: 80px 0 0
+        &-block
+            &__image
+                margin-bottom: 25px
+                img
+                    max-width: 50%
+    .target
+        padding: 390px 0 50px
+        .container
+            padding: 0
+        &-box
+            &__title
+                font-size: 30px
+                max-width: 300px
+                text-align: left
+                margin: 14px auto 42px
+            &__inner
+                max-width: 285px
+                padding-bottom: 198px
+            &__group
+                &:nth-child(2)
+                    margin-bottom: 45px
+            &__img
+                max-width: 295px
+                bottom: -90px
+        &-policy
+            bottom: 243px
+    .card
+        &__target
+            max-width: 280px
+            margin: 0 0 66px
+            &::before
+                background: url('../img/target/mobile.png') no-repeat
+                top: -42px
+                width: 81px
+                height: 81px
+        &__top
+            padding: 15px 20px 13px 20px
+            height: 73px
+        &__title
+            font-size: 7px
+            line-height: 12px
+            &::before
+                bottom: -7px
+                width: 7px
+                height: 1px
+        &__text
+            margin: 11px 0 0
+            font-size: 7px
+            line-height: 15px
+        &s
+            &__target
+                margin: -39px auto 0 
     .buyout
         padding-top: 14px
         &__bg
@@ -626,12 +839,24 @@
                 font-size: 24px
             &__title
                 margin: -6px 0 -3px
+@media (max-width: 430px) 
+    .target
+        &-policy
+            width: 100%
+            text-align: center
 @media (max-width: 425px)  
     .price
         &-table
             &__size
                 margin-left: 30px
 @media (max-width: 370px) 
+    .buyout
+        &-block
+            &__inner
+                &:last-child 
+                    .buyout-block
+                        &__image
+                            max-width: 300px
     .price
         &-table
             &__size
