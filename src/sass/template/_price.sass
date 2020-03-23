@@ -67,6 +67,29 @@
             letter-spacing: 2px
             width: 260px
             height: 60px
+            position: relative
+            overflow: hidden
+            transition: ease 0.3s
+            &::after
+                content: ''
+                display: block
+                width: 30px
+                height: 300px
+                margin-left: 20px
+                background: #fff
+                background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%)
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 )
+                position: absolute
+                left: -40px
+                top: -150px
+                z-index: 1
+                transform: rotate(45deg)
+                transition: all 0.1s
+                animation-name: slideme
+                animation-duration: 3s
+                animation-delay: 0.05s
+                animation-timing-function: ease-in-out
+                animation-iteration-count: infinite
     &-calc
         max-width: 1160px
         width: 100%
@@ -124,6 +147,15 @@
             justify-content: space-between
         &__decision
             +flex
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                top: 12px
+                right: -120px
+                background: url('../img/price/arrows.png') no-repeat
+                width: 87px
+                height: 34px
         &__select
             width: 220px
             margin-right: 59px
@@ -172,14 +204,28 @@
             height: 60px
             position: relative
             letter-spacing: 1.1px
-            &::before
+            overflow: hidden
+            transition: ease 0.3s
+            &::after
                 content: ''
+                display: block
+                width: 30px
+                height: 300px
+                margin-left: 20px
+                background: #fff
+                background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%)
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 )
                 position: absolute
-                top: 12px
-                left: -107px
-                background: url('../img/price/arrows.png') no-repeat
-                width: 87px
-                height: 34px
+                left: -40px
+                top: -150px
+                z-index: 1
+                transform: rotate(45deg)
+                transition: all 0.1s
+                animation-name: slideme
+                animation-duration: 3s
+                animation-delay: 0.05s
+                animation-timing-function: ease-in-out
+                animation-iteration-count: infinite
         &__all
             +flex
     &__text
@@ -195,3 +241,25 @@
         width: 260px
         height: 60px
         position: relative
+        overflow: hidden
+        transition: ease 0.3s
+        &::after
+            content: ''
+            display: block
+            width: 30px
+            height: 300px
+            margin-left: 20px
+            background: #fff
+            background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%)
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 )
+            position: absolute
+            left: -40px
+            top: -150px
+            z-index: 1
+            transform: rotate(45deg)
+            transition: all 0.1s
+            animation-name: slideme
+            animation-duration: 3s
+            animation-delay: 0.05s
+            animation-timing-function: ease-in-out
+            animation-iteration-count: infinite

@@ -1,0 +1,135 @@
+.docs
+    padding-top: 200px
+    &__bg
+        position: relative
+        z-index: 10
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            background: url('../img/docs/doc-bg.png') center no-repeat
+            width: 100%
+            min-height: 949px
+    .container
+        &__relative
+            z-index: 5
+    &__title
+        text-align: center
+        margin-left: 25px
+        margin-bottom: 76px
+        span
+            font-weight: normal
+    &-side
+        +flex-wrap
+        &__wrap
+            position: relative
+        &__left
+            +flex-wrap
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                right: 0
+                top: -39px
+                width: 1px
+                height: 500px
+                box-shadow: 0 63px 70px 14px rgba($dark, 0.07)
+                border-radius: 1px
+                background-color: rgba($light, .2)
+        &__box
+            position: relative
+            max-width: 259px
+            margin-right: 22px
+            &:first-child
+                margin: 0 24px 0 18px
+            &:last-child
+                margin-right: 39px
+        &__fancy
+            position: absolute
+            top: 52%
+            left: 50%
+            transform: translate(-52%, -50%)
+            background: url('../img/docs/loop.png') center no-repeat
+            width: 43px
+            height: 44px
+        &__right
+            margin-left: 37px
+        &__title
+            letter-spacing: 0.36px
+            font-weight: bold
+            font-size: 18px
+            line-height: 22px
+            color: $light
+            max-width: 200px
+            margin: -3px 0 40px
+            position: relative
+            &::before
+                content: ''
+                background-color: $light
+                width: 19px
+                height: 2px
+                position: absolute
+                left: 0
+                bottom: -8px
+        &__list
+            padding: 0
+            margin: 0 0 34px
+            list-style-type: none
+        &__item
+            +flex
+            align-items: center
+            margin-bottom: 9px
+        &__text
+            color: $light
+            font-size: 14px
+            line-height: 22px
+            letter-spacing: 0.28px
+            display: inline-block
+            margin: 4px 22px 0 0
+        &__download
+            +flex-content-center
+            color: $light
+            font-size: 14px
+            letter-spacing: 0.28px
+            width: 146px
+            height: 34px
+            box-shadow: 0 63px 70px 14px rgba($dark, 0.15)
+            border-radius: 17px
+            background-color: $darkBlue
+        &__img
+            img
+                position: absolute
+                top: 20px
+                right: -240px
+                max-width: 519px
+                width: 100%
+                min-height: 364px
+        &__link
+            width: 260px
+            height: 60px
+            +flex-content-center
+            letter-spacing: 1.1px
+            position: relative
+            overflow: hidden
+            transition: ease 0.3s
+            &::after
+                content: ''
+                display: block
+                width: 30px
+                height: 300px
+                margin-left: 20px
+                background: #fff
+                background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%)
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 )
+                position: absolute
+                left: -40px
+                top: -150px
+                z-index: 1
+                transform: rotate(45deg)
+                transition: all 0.1s
+                animation-name: slideme
+                animation-duration: 3s
+                animation-delay: 0.05s
+                animation-timing-function: ease-in-out
+                animation-iteration-count: infinite

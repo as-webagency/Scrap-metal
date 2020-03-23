@@ -1,0 +1,227 @@
+.footer
+    padding: 270px 0 0
+    &__bg
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 90px
+            left: 0
+            background: url('../img/footer-bg.png') center no-repeat
+            width: 100%
+            min-height: 1080px
+    .container
+        &__relative
+            z-index: 10
+    &-box
+        padding: 19px 20px
+        border-radius: 30px
+        &__out
+            margin-left: 18px
+            margin-bottom: 70px
+            max-width: 1160px
+            width: 100%
+            background-image: linear-gradient(to top, $pink 0%, $lightRed 100%)
+        &__inner
+            max-width: 1120px
+            width: 100%
+            border-radius: 17px
+            border: 1px solid rgba($light, 0.2)
+            margin: 0 auto
+            position: relative
+        &__side
+            +flex-wrap
+            justify-content: space-between
+            padding: 18px 20px 14px 36px
+        &__left
+            color: $light
+            max-width: 499px
+        &__title
+            text-transform: uppercase
+            font-size: 32px
+            margin: 0 0 42px
+            letter-spacing: 0.64px
+            line-height: 40px
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                bottom: -13px
+                width: 32px
+                height: 2px
+                background-color: $light
+            span
+                font-weight: normal
+        &__subtitle
+            margin: 0
+            font-size: 18px
+            letter-spacing: 0.50px
+            line-height: 22px
+        &__right
+            margin-top: 12px
+        &__form
+            position: relative
+        &__group
+            margin-bottom: 26px
+            position: relative
+            &:nth-child(1)
+                &.form-line 
+                    padding: 4px 4px 0 4px
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 27px
+                    left: 22px
+                    background: url('../img/pin.png') no-repeat
+                    width: 19px
+                    height: 20px
+            &:nth-child(2)
+                max-width: 200px
+                margin-bottom: 0
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 20px
+                    left: 20px
+                    background: url('../img/email.png') no-repeat
+                    width: 20px
+                    height: 19px
+        &__textarea
+            width: 490px
+            height: 134px
+            resize: none
+            padding: 24px 10px 10px 54px
+        &__input
+            width: 191px
+            height: 51px
+            padding: 0 10px 0 53px
+            margin-top: -2px
+        &__button
+            position: absolute
+            right: 0
+            bottom: 0
+            width: 280px
+            height: 58px
+            letter-spacing: 1px
+            overflow: hidden
+            transition: ease 0.3s
+            &::after
+                content: ''
+                display: block
+                width: 30px
+                height: 300px
+                margin-left: 20px
+                background: #fff
+                background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%)
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 )
+                position: absolute
+                left: -40px
+                top: -150px
+                z-index: 1
+                transform: rotate(45deg)
+                transition: all 0.1s
+                animation-name: slideme
+                animation-duration: 3s
+                animation-delay: 0.05s
+                animation-timing-function: ease-in-out
+                animation-iteration-count: infinite
+    &-line
+        background: url('../img/footer/line.png') repeat center
+        max-width: 1156px
+        width: 100%
+        height: 3px
+    &-contact
+        margin: 32px 0 12px
+        +flex-wrap
+        &__block
+            color: $light
+            max-width: 318px
+            position: relative
+            margin-bottom: 51px
+            &:first-child
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 20px
+                    left: 25px
+                    background: url('../img/footer/geo.png') no-repeat
+                    width: 32px
+                    height: 48px
+            &:nth-child(2)
+                margin-bottom: 24px
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 21px
+                    background: url('../img/footer/phone.png') no-repeat
+                    width: 48px
+                    height: 42px
+        &__title
+            letter-spacing: 0.36px
+            font-size: 18px
+            margin: 0
+            padding-left: 78px
+        &__text
+            color: $light
+            letter-spacing: 0.36px
+            font-size: 18px
+            margin: 8px 0 0
+            padding-left: 78px
+            line-height: 28px
+        &__link
+            color: $light
+            font-size: 18px
+            letter-spacing: 0.30px
+            border-bottom: 1px solid $light
+        &__links
+            +flex
+            max-width: 400px
+            margin-left: 75px
+        &__viber
+            margin: 0 15px
+        &__telegram
+            margin-top: 5px
+        &__right
+            .footer-contact
+                &__block
+                    margin-top: 20px
+                    margin-bottom: 0
+                    &::before
+                        display: none
+                &__title
+                    padding-left: 0
+                &__text
+                    padding-left: 0
+                    margin: 6px 0 45px
+                    line-height: 30px
+        &__center
+            margin: 10px 40px 0
+    &-bottom
+        padding: 30px 0 39px
+        +flex
+        justify-content: space-between
+        align-items: flex-end
+        &__logo
+            margin-left: 18px
+            +flex
+            align-items: center
+        &__wrap
+            color: $light
+            font-size: 16px
+            margin-left: 33px
+        &__up
+            font-weight: bold
+            letter-spacing: 0.32px
+            text-transform: uppercase
+        &__down
+            display: block
+            letter-spacing: 0.32px
+            margin-top: 4px
+        &__link
+            color: $light
+            font-size: 18px
+            letter-spacing: 0.38px
+            display: block
+            margin-bottom: 25px
