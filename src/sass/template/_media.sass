@@ -311,6 +311,13 @@
                 margin-top: 25px
             &__down
                 font-weight: bold
+        &-contact
+            &__center
+                max-width: 100%
+                width: 100%
+                iframe
+                    max-width: 100%
+                    width: 100%
     .docs
         background-size: cover
         padding-top: 140px
@@ -470,11 +477,6 @@
                     left: 75%
                     top: 450px
 @media (max-width: 768px)
-    .footer
-        &-contact
-            &__center
-                max-width: 100%
-                width: 100%
     .work
         &__title
             margin-bottom: 40px
@@ -780,7 +782,9 @@
             &__links
                 margin-left: 65px
             &__center
-                margin: 41px 0 45px
+                margin: 41px 0 40px
+                iframe
+                    height: 260px
             &__right 
                 .footer-contact
                     &__title
@@ -791,6 +795,8 @@
                         margin: -1px 0 22px
                     &__link
                         margin-left: 20px
+                    &__block
+                        margin-top: 0 !important
         &-bottom
             &__logo
                 margin-top: 10px

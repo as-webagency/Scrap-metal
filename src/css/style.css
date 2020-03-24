@@ -460,10 +460,6 @@ button {
   cursor: pointer;
 }
 
-main {
-  overflow: hidden;
-}
-
 .section {
   padding: 60px 0;
 }
@@ -4115,6 +4111,11 @@ body.compensate-for-scrollbar {
   margin: 10px 40px 0;
 }
 
+.footer-contact__center iframe {
+  width: 400px;
+  height: 200px;
+}
+
 .footer-bottom {
   padding: 30px 0 39px;
   display: -webkit-box;
@@ -4264,6 +4265,45 @@ body.compensate-for-scrollbar {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.modal__button::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 300px;
+  margin-left: 20px;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), color-stop(50%, white), to(rgba(255, 255, 255, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+          animation-name: slideme;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .modal__policy {
@@ -4387,6 +4427,45 @@ body.compensate-for-scrollbar {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.modal-accurate__button::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 300px;
+  margin-left: 20px;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), color-stop(50%, white), to(rgba(255, 255, 255, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+          animation-name: slideme;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .modal-accurate__policy {
@@ -4510,6 +4589,45 @@ body.compensate-for-scrollbar {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.modal-orient__button::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 300px;
+  margin-left: 20px;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), color-stop(50%, white), to(rgba(255, 255, 255, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+          animation-name: slideme;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .modal-orient__policy {
@@ -4633,6 +4751,45 @@ body.compensate-for-scrollbar {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.modal-special__button::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 300px;
+  margin-left: 20px;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), color-stop(50%, white), to(rgba(255, 255, 255, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+          animation-name: slideme;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .modal-special__policy {
@@ -4756,6 +4913,45 @@ body.compensate-for-scrollbar {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.modal-call__button::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 300px;
+  margin-left: 20px;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), color-stop(50%, white), to(rgba(255, 255, 255, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+          animation-name: slideme;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .modal-call__policy {
@@ -5198,6 +5394,14 @@ body.compensate-for-scrollbar {
   .footer-bottom__down {
     font-weight: bold;
   }
+  .footer-contact__center {
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-contact__center iframe {
+    max-width: 100%;
+    width: 100%;
+  }
   .docs {
     background-size: cover;
     padding-top: 140px;
@@ -5436,10 +5640,6 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 768px) {
-  .footer-contact__center {
-    max-width: 100%;
-    width: 100%;
-  }
   .work__title {
     margin-bottom: 40px;
   }
@@ -5822,7 +6022,10 @@ body.compensate-for-scrollbar {
     margin-left: 65px;
   }
   .footer-contact__center {
-    margin: 41px 0 45px;
+    margin: 41px 0 40px;
+  }
+  .footer-contact__center iframe {
+    height: 260px;
   }
   .footer-contact__right .footer-contact__title {
     padding-left: 18px;
@@ -5834,6 +6037,9 @@ body.compensate-for-scrollbar {
   }
   .footer-contact__right .footer-contact__link {
     margin-left: 20px;
+  }
+  .footer-contact__right .footer-contact__block {
+    margin-top: 0 !important;
   }
   .footer-bottom__logo {
     margin-top: 10px;
