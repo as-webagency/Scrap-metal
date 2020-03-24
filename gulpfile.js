@@ -77,7 +77,7 @@ function buildFonts(done) {
 function buildImage(done) {
     src('./src/img/**/*.{png,jpg,jpeg}')
         .pipe(tinypng({
-            key: 'API_KEY'
+            key: '7vYvvPwQRWsZkrbpbLFLM58Kx5J727FQ'
         }))
         .pipe(dest('dist/img/'));
     src('./src/img/**/*.svg')
