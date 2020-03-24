@@ -112,4 +112,125 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
         }
     });
 
+    // Модальное окно
+    const popup = () => {
+
+        const modal = document.querySelector('.modal'),
+            modalAccurate = document.querySelector('.modal-accurate'),
+            modalOrient = document.querySelector('.modal-orient'),
+            modalSpecial = document.querySelector('.modal-special'),
+            modalCall = document.querySelector('.modal-call'),
+            modalButton = document.querySelectorAll('[data-toggle=modal]'),
+            modalAccurateButton = document.querySelectorAll('[data-toggle=modal-accurate]'),
+            modalCallButton = document.querySelectorAll('[data-toggle=modal-call]'),
+            modalSpecialButton = document.querySelectorAll('[data-toggle=modal-special]'),
+            modalOrientButton = document.querySelectorAll('[data-toggle=modal-orient]'),
+            closeButton = document.querySelector('.modal__close'),
+            closeAccurateButton = document.querySelector('.modal-accurate__close'),
+            closeOrientButton = document.querySelector('.modal-orient__close'),
+            closeSpecialButton = document.querySelector('.modal-special__close'),
+            closeCallButton = document.querySelector('.modal-call__close'),
+            modalThanks = document.querySelector('.modal-thanks');
+
+        const switchModal = () => {
+            modal.classList.toggle('modal--visible');
+        };
+        const switchModalAccurate = () => {
+            modalAccurate.classList.toggle('modal-accurate--visible');
+        };
+        const switchModalOrient = () => {
+            modalOrient.classList.toggle('modal-orient--visible');
+        };
+        const switchModalSpecial = () => {
+            modalSpecial.classList.toggle('modal-special--visible');
+        };
+        const switchModalCall = () => {
+            modalCall.classList.toggle('modal-call--visible');
+        };
+
+        modalButton.forEach(elem => {
+            elem.addEventListener('click', switchModal);
+        });
+        modalAccurateButton.forEach(elem => {
+            elem.addEventListener('click', switchModalAccurate);
+        });
+        modalOrientButton.forEach(elem => {
+            elem.addEventListener('click', switchModalOrient);
+        });
+        modalSpecialButton.forEach(elem => {
+            elem.addEventListener('click', switchModalSpecial);
+        });
+        modalCallButton.forEach(elem => {
+            elem.addEventListener('click', switchModalCall);
+        });
+
+        closeButton.addEventListener('click', switchModal);
+        closeAccurateButton.addEventListener('click', switchModalAccurate);
+        closeOrientButton.addEventListener('click', switchModalOrient);
+        closeSpecialButton.addEventListener('click', switchModalSpecial);
+        closeCallButton.addEventListener('click', switchModalCall);
+
+        modal.addEventListener('click', (event) => {
+            let target = event.target;
+
+            if (target.closest('.modal')) {
+                target.classList.remove('modal--visible');
+            } else {
+                return;
+            }
+        });
+
+        modalAccurate.addEventListener('click', (event) => {
+            let target = event.target;
+
+            if (target.closest('.modal-accurate')) {
+                target.classList.remove('modal-accurate--visible');
+            } else {
+                return;
+            }
+        });
+
+        modalOrient.addEventListener('click', (event) => {
+            let target = event.target;
+
+            if (target.closest('.modal-orient')) {
+                target.classList.remove('modal-orient--visible');
+            } else {
+                return;
+            }
+        });
+
+        modalSpecial.addEventListener('click', (event) => {
+            let target = event.target;
+
+            if (target.closest('.modal-special')) {
+                target.classList.remove('modal-special--visible');
+            } else {
+                return;
+            }
+        });
+
+        modalCall.addEventListener('click', (event) => {
+            let target = event.target;
+
+            if (target.closest('.modal-call')) {
+                target.classList.remove('modal-call--visible');
+            } else {
+                return;
+            }
+        });
+
+        modalThanks.addEventListener('click', (event) => {
+            let target = event.target;
+
+            if (target.closest('.modal-thanks')) {
+                target.classList.remove('modal-thanks--visible');
+            } else {
+                return;
+            }
+        });
+
+    };
+    popup();
+
 });

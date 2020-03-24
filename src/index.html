@@ -32,7 +32,7 @@
                         <a href="https://telegram.me/SemenovAlexander92" target="_blank" class="contact-side__telegram">
                             <img src="./img/telegram.png" alt="telegram">
                         </a>
-                        <button class="contact-side__button">&#91; Заказать звонок &#93;</button>
+                        <button class="contact-side__button" data-toggle="modal">&#91; Заказать звонок &#93;</button>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                                 <div class="hero-block__description">В этом окне пояснения по типу металла, что отностится к выбранной группе. В этом окне пояснения по типу металла, что отностится к выбранной группе.</div>
                             </div>
                             <div class="hero-block__request">Для более точно рассчёта, оставьте заявку</div>
-                            <button class="button-dark hero-block__button button-dark--color">
+                            <button class="button-dark hero-block__button button-dark--color" data-toggle="modal-accurate">
                                <span class="hero-block__size">Заявка <span>на точный расчёт</span></span>
                             </button>
                         </div>
@@ -245,16 +245,16 @@
                         <div class="price-table__head"></div>
                         <div class="price-table__body">
                             <div class="price-table__item">
-                                <button class="button-pink price-table__button button-pink--color">Позвонить</button>
+                                <button data-toggle="modal-orient" class="button-pink price-table__button button-pink--color">Позвонить</button>
                             </div>
                             <div class="price-table__item">
-                                <button class="button-pink price-table__button button-pink--color">Позвонить</button>
+                                <button data-toggle="modal-orient" class="button-pink price-table__button button-pink--color">Позвонить</button>
                             </div>
                             <div class="price-table__item">
-                                <button class="button-pink price-table__button button-pink--color">Позвонить</button>
+                                <button data-toggle="modal-orient" class="button-pink price-table__button button-pink--color">Позвонить</button>
                             </div>
                             <div class="price-table__item">
-                                <button class="button-pink price-table__button button-pink--color">Позвонить</button>
+                                <button data-toggle="modal-orient" class="button-pink price-table__button button-pink--color">Позвонить</button>
                             </div>
                         </div>
                     </div>
@@ -282,12 +282,12 @@
                                     <div class="price-calc__from" id="total-price-from">От</div>
                                 </div>
                             </div>
-                            <button class="button-dark price-calc__button button-dark--color"><span class="price-calc__button-size">Заявка, <span class="price-calc__button-normal">на точный расчёт</span></span></button>
+                            <button class="button-dark price-calc__button button-dark--color" data-toggle="modal-accurate"><span class="price-calc__button-size">Заявка, <span class="price-calc__button-normal">на точный расчёт</span></span></button>
                         </div>
                     </div>
                 </div>
                 <div class="price__text">Для постоянных клиентов и оптовиков у нас более интересные предложения*</div>
-                <button class="button-pink price__button button-pink--color">Узнать спец.условия</button>
+                <button class="button-pink price__button button-pink--color" data-toggle="modal-special">Узнать спец.условия</button>
             </div>
         </section>
         <section class="took took__bg">
@@ -307,7 +307,7 @@
                         <li class="took-wrap__item">Произведём рассчёт любым удобным способом, нал/безнал</li>
                     </ul>
                     <div class="took-wrap__btn">
-                        <button class="button-dark took-wrap__button button-dark--color">Назначить время вывоза</button>
+                        <button class="button-dark took-wrap__button button-dark--color" data-toggle="modal-call">Назначить время вывоза</button>
                     </div>
                 </div>
                 <div class="took-image">
@@ -712,6 +712,93 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <button class="modal__close"></button>
+            <h4 class="modal__title">Перезвоним в течении 5 минут,
+                и подробно ответим на все вопросы</h4>
+            <form action="send.php" class="form modal__form" method="post">
+                <div class="form-line modal__group form-line--color">
+                    <input type="tel" class="form-input modal__input form-input--color" name="user_name" placeholder="Введите номер телефона">
+                </div>
+                <button class="button-dark modal__button button-dark--color">Жду звонка</button>
+            </form>
+            <div class="modal__policy">Политика конфидециальности*</div>
+        </div>
+    </div>
+
+    <div class="modal-accurate">
+        <div class="modal-accurate__dialog">
+            <button class="modal-accurate__close"></button>
+            <h4 class="modal-accurate__title">Заявка на точный расчёт Менеджер свяжется с Вами для уточнения деталей</h4>
+            <form action="send.php" class="form modal-accurate__form" method="post">
+                <div class="form-line modal-accurate__group form-line--color">
+                    <input type="tel" class="form-input modal-accurate__input form-input--color" name="user_name" placeholder="Введите номер телефона">
+                </div>
+                <button class="button-dark modal-accurate__button button-dark--color">Жду звонка</button>
+            </form>
+            <div class="modal-accurate__image"></div>
+            <div class="modal-accurate__policy">Политика конфидециальности*</div>
+        </div>
+    </div>
+
+    <div class="modal-orient">
+        <div class="modal-orient__dialog">
+            <button class="modal-orient__close"></button>
+            <h4 class="modal-orient__title">Перезвоним в течении 5 минут
+                и сориентируем по стоимости</h4>
+            <form action="send.php" class="form modal-orient__form" method="post">
+                <div class="form-line modal-orient__group form-line--color">
+                    <input type="tel" class="form-input modal-orient__input form-input--color" name="user_name" placeholder="Введите номер телефона">
+                </div>
+                <button class="button-dark modal-orient__button button-dark--color">Жду звонка</button>
+            </form>
+            <div class="modal-orient__image"></div>
+            <div class="modal-orient__policy">Политика конфидециальности*</div>
+        </div>
+    </div>
+
+    <div class="modal-special">
+        <div class="modal-special__dialog">
+            <button class="modal-special__close"></button>
+            <h4 class="modal-special__title">Подробнее о спец.предложении
+                мы можем рассказать Вам по телефону.</h4>
+            <form action="send.php" class="form modal-special__form" method="post">
+                <div class="form-line modal-special__group form-line--color">
+                    <input type="tel" class="form-input modal-special__input form-input--color" name="user_name" placeholder="Введите номер телефона">
+                </div>
+                <button class="button-dark modal-special__button button-dark--color">Жду звонка</button>
+            </form>
+            <div class="modal-special__image"></div>
+            <div class="modal-special__policy">Политика конфидециальности*</div>
+        </div>
+    </div>
+    
+    <div class="modal-call">
+        <div class="modal-call__dialog">
+            <button class="modal-call__close"></button>
+            <h4 class="modal-call__title">Перезвоним, уточним время
+                и место, сориентируем по стоимости</h4>
+            <form action="send.php" class="form modal-call__form" method="post">
+                <div class="form-line modal-call__group form-line--color">
+                    <input type="tel" class="form-input modal-call__input form-input--color" name="user_name" placeholder="Введите номер телефона">
+                </div>
+                <button class="button-dark modal-call__button button-dark--color">Жду звонка</button>
+            </form>
+            <div class="modal-call__image"></div>
+            <div class="modal-call__policy">Политика конфидециальности*</div>
+        </div>
+    </div>
+
+    <div class="modal-thanks">
+        <div class="modal-thanks__dialog">
+            <button class="modal-thanks__close"></button>
+            <h4 class="modal-thanks__title">Спасибо!<br>
+                Ожидайте звонка в течении 5 минут!</h4>
+            <img src="./img/timer.png" alt="timer" class="modal-thanks__image">
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="./js/script.js"></script>
