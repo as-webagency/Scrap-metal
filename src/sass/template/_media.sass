@@ -701,14 +701,16 @@
 @media (max-width: 540px)
     .modal,
     .modal-accurate,
-    .modal-orient
+    .modal-orient,
+    .modal-thanks
         &__title
             font-size: 18px
     .modal,
     .modal-accurate,
     .modal-orient,
     .modal-special,
-    .modal-call
+    .modal-call,
+    .modal-thanks
         &__dialog
             height: auto
         &__policy
@@ -728,6 +730,13 @@
         &__title
             max-width: 340px
             line-height: 22px
+    .modal-thanks
+        &__title
+            line-height: 26px
+            max-width: 290px
+    .modal-thanks
+        &__dialog
+            padding: 53px 25px 25px
 @media (max-width: 480px)
     .footer
         padding: 360px 0 0

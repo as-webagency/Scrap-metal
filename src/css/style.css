@@ -565,6 +565,65 @@ main {
   color: #252d41;
 }
 
+.tooltiper {
+  display: inline-block;
+  color: #000000;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.tooltiper .tooltip {
+  min-width: 100px;
+  position: absolute;
+  font-size: 12px;
+  text-align: left;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px;
+  border-radius: 10px;
+  visibility: hidden;
+  display: block;
+  line-height: 20px;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateX(90deg) translateZ(0px);
+          transform: rotateX(90deg) translateZ(0px);
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-out 0.1s, -webkit-transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  transition: opacity 0.1s ease-out 0.1s, -webkit-transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  -o-transition: transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53), opacity 0.1s ease-out 0.1s;
+  transition: transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53), opacity 0.1s ease-out 0.1s;
+  transition: transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53), opacity 0.1s ease-out 0.1s, -webkit-transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+
+.tooltiper .tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -26px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 14px solid #ffffff;
+  border-bottom: 14px solid transparent;
+}
+
+.tooltiper:hover .tooltip {
+  visibility: visible;
+  -webkit-transform: rotateX(0) translateZ(20px);
+          transform: rotateX(0) translateZ(20px);
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  transition: opacity 0.1s ease-out, -webkit-transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  -o-transition: transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53), opacity 0.1s ease-out;
+  transition: transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53), opacity 0.1s ease-out;
+  transition: transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53), opacity 0.1s ease-out, -webkit-transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -5665,21 +5724,24 @@ body.compensate-for-scrollbar {
 @media (max-width: 540px) {
   .modal__title,
   .modal-accurate__title,
-  .modal-orient__title {
+  .modal-orient__title,
+  .modal-thanks__title {
     font-size: 18px;
   }
   .modal__dialog,
   .modal-accurate__dialog,
   .modal-orient__dialog,
   .modal-special__dialog,
-  .modal-call__dialog {
+  .modal-call__dialog,
+  .modal-thanks__dialog {
     height: auto;
   }
   .modal__policy,
   .modal-accurate__policy,
   .modal-orient__policy,
   .modal-special__policy,
-  .modal-call__policy {
+  .modal-call__policy,
+  .modal-thanks__policy {
     padding-bottom: 25px;
   }
   .modal-accurate__image,
@@ -5696,6 +5758,13 @@ body.compensate-for-scrollbar {
   .modal-orient__title {
     max-width: 340px;
     line-height: 22px;
+  }
+  .modal-thanks__title {
+    line-height: 26px;
+    max-width: 290px;
+  }
+  .modal-thanks__dialog {
+    padding: 53px 25px 25px;
   }
 }
 
